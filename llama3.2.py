@@ -7,7 +7,6 @@ import sys
 def start_ollama():
     """Start Ollama service and load model"""
     try:
-        # Start Ollama server
         server_proc = subprocess.Popen(
             ["ollama", "serve"],
             stdout=subprocess.PIPE,
@@ -15,10 +14,8 @@ def start_ollama():
             text=True
         )
         
-        # Wait for server initialization
         time.sleep(8)
         
-        # Load model (critical step!)
         model_proc = subprocess.Popen(
             ["ollama", "run", "llama3.2"],
             stdout=subprocess.PIPE,
@@ -26,7 +23,6 @@ def start_ollama():
             text=True
         )
         
-        # Wait for model loading
         time.sleep(12)
         return True
     except FileNotFoundError:
@@ -46,7 +42,7 @@ def get_response(prompt):
             
     try:
         response = requests.post(
-            "http://127.0.0.1:11434/api/generate",  # Use 127.0.0.1 instead of localhost
+            "http://127.0.0.1:11434/api/generate",  
             json={
                 "model": "llama3.2",
                 "prompt": prompt,
