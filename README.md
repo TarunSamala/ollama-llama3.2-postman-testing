@@ -1,17 +1,31 @@
-# Ollama-llama3.2-Postman-Testing 🔮
+# Ollama-llama3.2-Postman-Testing
 
-![Dark Souls NPC Response](./screenshots/ollama_souls.png)
-![Postman API Test](./screenshots/postman.png)
+A project combining Ollama's language model with a Dark Souls-themed personality, featuring API testing and local deployment options.
 
-A project integrating Ollama's LLM with custom Dark Souls personality and API testing workflows.
+![Dark Souls Style Response](./screenshots/ollama_souls.png)  
+*Example of custom Dark Souls-themed responses from the LLM*
 
-## 📂 Project Structure
-```plaintext
-.
-├── llama3.2.py          # Connection testing and health checks
-├── ollama.py            # Standard response generation logic
-├── ModelFILE            # Custom Dark Souls NPC personality model
-├── pip-ollama.py        # Cloud-based Ollama API implementation
-├── screenshots/
-│   ├── ollama_souls.png # Custom model responses
-│   └── postman.png      # Postman API validation
+![Postman API Test](./screenshots/postman.png)  
+*API endpoint testing using Postman*
+
+## Project Structure
+
+```bash
+├── llama3.2.py # Connection testing and health checks
+├── ollama.py # Response generation with Dark Souls style
+├── ModelFILE # Custom personality configuration
+├── pip-ollama.py # Cloud API implementation
+└── screenshots/ # Demonstration images
+```
+
+## Key Features
+- **Connection Testing** (`llama3.2.py`): Verifies Ollama service status
+- **Dark Souls Personality** (`ModelFILE`): Custom responses in Souls-like style
+- **Dual Operation Modes**: Local Ollama or Cloud API usage
+- **Postman Integration**: Ready-to-use API testing configuration
+
+## Installation
+1. Clone repository:
+```bash
+git clone https://github.com/TarunSamala/ollama-llama3.2-postman-testing.git
+```
