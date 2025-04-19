@@ -1,24 +1,17 @@
-# Ollama Llama3.2 API Testing Project
+# Ollama-llama3.2-Postman-Testing 🔮
 
-[![Ollama Compatible](https://img.shields.io/badge/Ollama-≥0.1.0-blue)](https://ollama.ai)
-[![Postman](https://img.shields.io/badge/Postman-API_Testing-orange)](https://www.postman.com/)
+![Dark Souls NPC Response](./screenshots/ollama_souls.png)
+![Postman API Test](./screenshots/postman.png)
 
-A test environment for configuring and experimenting with Llama3.2 through Ollama, including Postman API integration and documentation.
+A project integrating Ollama's LLM with custom Dark Souls personality and API testing workflows.
 
-## 📖 Overview
-This repository contains:
-- Ollama configuration for Llama3.2
-- Postman collection examples
-- API testing workflows
-- Documentation for local setup
-
-## 🚀 Prerequisites
-- [Ollama installed](https://ollama.ai/download)
-- Postman Desktop (or web version)
-- Git
-- GitHub account
-
-## ⚙️ Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/TarunSamala/ollama-llama3.2-postman-testing.gitt
+## 📂 Project Structure
+```plaintext
+.
+├── llama3.2.py          # Connection testing and health checks
+├── ollama.py            # Standard response generation logic
+├── ModelFILE            # Custom Dark Souls NPC personality model
+├── pip-ollama.py        # Cloud-based Ollama API implementation
+├── screenshots/
+│   ├── ollama_souls.png # Custom model responses
+│   └── postman.png      # Postman API validation
