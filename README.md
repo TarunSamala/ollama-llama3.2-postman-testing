@@ -1,8 +1,8 @@
 # Ollama-llama3.2-Postman-Testing
 
-A project combining Ollama's language model with a Dark Souls-themed personality, featuring API testing and local deployment options.
+A project combining Ollama's language model with a Souls-Like game category personality, featuring API testing and local deployment options.
 
-![Dark Souls Style Response](./screenshots/ollama_souls.png)  
+![Custom LLM with presonality](./screenshots/ollama_souls.png)  
 *Example of custom Dark Souls-themed responses from the LLM*
 
 ![Postman API Test](./screenshots/postman.png)  
